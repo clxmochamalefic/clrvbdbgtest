@@ -6,9 +6,13 @@
             "type": "clr",
             "request": "launch",
             "preLaunchTask": "build",
-            "program": "${workspaceFolder}/bin/Debug/${fileBasenameNoExtension}.exe",
-            "args": [],
-            "cwd": "${workspaceFolder}/bin/Debug/",
+            "program": "${workspaceFolder}/ConsoleApp1/bin/x64/Debug/ConsoleApp1.exe",
+			"args": [
+				"${workspaceRoot}/ConsoleApp1/ConsoleApp1.vbproj",
+				"/p:Configuration=Debug;GenerateFullPaths=true",
+				"/t:build"
+            ],
+            "cwd": "${workspaceFolder}/ConsoleApp1/bin/x64/Debug/",
             "console": "internalConsole",
             "internalConsoleOptions": "openOnSessionStart"
         },
